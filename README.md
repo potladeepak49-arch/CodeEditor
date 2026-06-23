@@ -1,36 +1,159 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CodeEditor
 
-## Getting Started
+A modern online coding platform built to help developers write, run, and manage code directly from the browser. It provides a clean coding environment, supports multiple programming languages, and includes coding challenges, snippet management, and user authentication.
 
-First, run the development server:
+---
+
+## About the Project
+
+CodeEditor was developed to provide an IDE-like experience on the web. The platform allows users to write code, execute programs, save snippets, and practice coding challenges in one place.
+
+The goal of this project was to gain hands-on experience with full-stack development while building a useful tool for programmers and students.
+
+---
+## 🌐 Live Demo
+
+🚀 Try the application here:
+
+**Live Website:** https://codeeditor-ten-pied.vercel.app/
+
+## Features
+
+- User Authentication and Authorization
+- Monaco Editor Integration
+- Multi-language Code Support
+- Real-time Code Execution
+- Save and Manage Snippets
+- Coding Challenges with Test Cases
+- User Dashboard
+- Dark and Light Themes
+- Responsive Design
+- Shareable Snippet Links
+
+---
+
+## Tech Stack
+
+### Frontend
+- Next.js
+- React
+- Tailwind CSS
+- Shadcn UI
+- Monaco Editor
+- Zustand
+
+### Backend
+- Node.js
+- MongoDB Atlas
+- Mongoose
+- Auth.js
+- JWT Authentication
+
+### Deployment
+- Vercel
+
+---
+
+## Project Structure
+
+```text
+codeeditor/
+├── app/
+├── components/
+├── models/
+├── store/
+├── config/
+├── lib/
+└── auth.js
+```
+
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-username/codeeditor.git
+cd codeeditor
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Configure Environment Variables
+
+Create a `.env.local` file:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+AUTH_SECRET=your_secret_key
+NEXTAUTH_URL=http://localhost:3000
+```
+
+### Run the Application
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and visit:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Challenges Faced
 
-To learn more about Next.js, take a look at the following resources:
+- Integrating Monaco Editor with Next.js
+- Managing application state efficiently
+- Implementing secure authentication
+- Designing a responsive interface
+- Handling code execution and storage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## What I Learned
 
-## Deploy on Vercel
+Through this project, I improved my understanding of:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Full Stack Development
+- REST API Development
+- Database Design with MongoDB
+- Authentication and Security
+- State Management
+- Deployment using Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Future Enhancements
+
+- GitHub OAuth Login
+- Collaborative Coding
+- AI Code Suggestions
+- Coding Contests
+- Real Compiler Integration
+- Discussion Forums
+
+---
+
+## Author
+
+### Deepak Potla
+
+- GitHub: https://github.com/potladeepak49-arch
+- LinkedIn: https://www.linkedin.com/in/deepakpotla/
+- Email: deepakpotla942@gmail.com
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
