@@ -12,7 +12,7 @@ const SnippetSchema = new mongoose.Schema({
   tags:        [{ type: String, lowercase: true }],
   isPublic:    { type: Boolean, default: false },
   isFavorite:  { type: Boolean, default: false },
-  shareId:     { type: String, sparse: true, unique: true, default: null },
+ shareId: { type: String, sparse: true, unique: true, default: () => Math.random().toString(36).substring(2, 10) },
   executionCount:  { type: Number, default: 0 },
   lastExecutedAt:  { type: Date, default: null },
 }, { timestamps: true })
